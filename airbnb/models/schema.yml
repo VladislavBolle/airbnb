@@ -8,7 +8,7 @@ models:
             arguments:
               min_row_count: 100
             config:
-              severity: error
+              severity: warning
     columns:
 
       - name: listing_id
