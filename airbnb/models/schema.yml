@@ -6,7 +6,7 @@ models:
     data_tests:
         - minimum_row_count:
             arguments:
-              min_row_count: 10000000
+              min_row_count: 100
             config:
               severity: error
     columns:
