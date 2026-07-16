@@ -2,6 +2,7 @@ airbnb/package-lock.yml
 airbnb/target/
 airbnb/dbt_packages/
 airbnb/dbt_internal_packages/
+airbnb/_prod_profiles/profiles.yml
 
 archive
 dbt_dagster_project/tmp*
