@@ -1,14 +1,9 @@
 {{ config(
-    materialized="incremental", 
-    incremental_strategy="microbatch", 
-    event_time="review_date", 
-    begin="2009-06-20", 
-    batch_size="year", 
-    full_refresh=false, 
-    on_schema_change="fail", 
-    tags=['fact'], 
-    meta={'schmea': 'mart'}
+    materialized="view",
+    tags=['fact'],
+    meta={'schema': 'mart'}
 ) }}
+
 
 WITH fct_reviews AS (
     SELECT * FROM {{ ref('fct_reviews') }}
